@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14, 11.625" name="GroupProject">
+  <DataContextMoniker Name="/GroupProjectDataContext" />
+  <nestedChildShapes>
+    <classShape Id="aee716fe-1380-416a-951d-59deabec676c" absoluteBounds="6.25, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/GroupProjectDataContext/Meeting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b769899-733f-431b-b450-1d0423391d39" absoluteBounds="6.265, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1eb2345-5e25-49a5-a12b-fff4f033a714" absoluteBounds="3.5, 4.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/GroupProjectDataContext/TeamMember" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2033bd04-bb00-4ba7-948a-395b7b78f6bc" absoluteBounds="3.515, 4.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c9a6a0d-acc8-468c-8f86-e5c0f839e782" absoluteBounds="6.25, 3.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/GroupProjectDataContext/PersonSlotAssignment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe5cbd14-58bf-4409-a633-511da84101ae" absoluteBounds="6.265, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d4da64f2-e49a-4b62-9efa-1375abfdc57d" absoluteBounds="9, 5.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/GroupProjectDataContext/ProjectTeamAssignment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a33775f-169c-4ceb-8648-6521e6ef2384" absoluteBounds="9.015, 6.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b57ed5c-f6fc-4641-a4a1-6ce4edfe5c62" absoluteBounds="0.75, 4.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/GroupProjectDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f5e02a9-c759-4f35-9052-efe7a8c966b9" absoluteBounds="0.765, 5.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4158874b-0841-47a2-8b99-c70bc1c2e2fa" absoluteBounds="3.5, 1.625, 2, 1.5785953776041668">
+      <DataClassMoniker Name="/GroupProjectDataContext/Slot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1dc2bfd-5041-4199-9d00-ad7f6ccf2373" absoluteBounds="3.515, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="364d796c-f1be-4cb0-8c7e-5485d1822a40" absoluteBounds="9, 8.5, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/GroupProjectDataContext/Task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b77dfc72-a44d-4c7d-aeef-77751c16a0b6" absoluteBounds="9.015, 8.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f25609c7-a5ed-4079-baee-e82cbb0abea2" absoluteBounds="11.75, 7.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/GroupProjectDataContext/TaskAssignment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99128b1f-e630-4d5b-805d-d6c6e3321b2e" absoluteBounds="11.765, 7.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.85179768880208); (6.25 : 4.85179768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/TeamMember/TeamMember_PersonSlotAssignment" />
+      <nodes>
+        <classShapeMoniker Id="a1eb2345-5e25-49a5-a12b-fff4f033a714" />
+        <classShapeMoniker Id="6c9a6a0d-acc8-468c-8f86-e5c0f839e782" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.16909912109375); (9 : 6.16909912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/TeamMember/TeamMember_ProjectTeamAssignment" />
+      <nodes>
+        <classShapeMoniker Id="a1eb2345-5e25-49a5-a12b-fff4f033a714" />
+        <classShapeMoniker Id="d4da64f2-e49a-4b62-9efa-1375abfdc57d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.47199625651042); (3.5 : 5.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/Role/Role_TeamMember" />
+      <nodes>
+        <classShapeMoniker Id="0b57ed5c-f6fc-4641-a4a1-6ce4edfe5c62" />
+        <classShapeMoniker Id="a1eb2345-5e25-49a5-a12b-fff4f033a714" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.88064697265625); (6.25 : 1.88064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/Slot/Slot_Meeting" />
+      <nodes>
+        <classShapeMoniker Id="4158874b-0841-47a2-8b99-c70bc1c2e2fa" />
+        <classShapeMoniker Id="aee716fe-1380-416a-951d-59deabec676c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.20238007346755); (5.875 : 3.57738007346755); (5.875 : 3.25); (6.25 : 3.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GroupProjectDataContext/Slot/Slot_PersonSlotAssignment" />
+      <nodes>
+        <classShapeMoniker Id="4158874b-0841-47a2-8b99-c70bc1c2e2fa" />
+        <classShapeMoniker Id="6c9a6a0d-acc8-468c-8f86-e5c0f839e782" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 10.0305001744792); (12.75 : 10.0305001744792); (12.75 : 8.6362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/Task/Task_TaskAssignment" />
+      <nodes>
+        <classShapeMoniker Id="364d796c-f1be-4cb0-8c7e-5485d1822a40" />
+        <classShapeMoniker Id="f25609c7-a5ed-4079-baee-e82cbb0abea2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.53929768880208); (12.75 : 5.53929768880208); (12.75 : 7.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/TeamMember/TeamMember_TaskAssignment" />
+      <nodes>
+        <classShapeMoniker Id="a1eb2345-5e25-49a5-a12b-fff4f033a714" />
+        <classShapeMoniker Id="f25609c7-a5ed-4079-baee-e82cbb0abea2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1d5af193-70f4-4403-a1e5-85ed799c1807" absoluteBounds="10.75, 3.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/GroupProjectDataContext/viewTeamManager" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3a857be-04ba-46d4-975b-7c70eae41b37" absoluteBounds="10.765, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4fbcc393-152b-4c1f-8728-deb96b0e6999" absoluteBounds="7.125, 7.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/GroupProjectDataContext/Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb31e0ce-39b4-454b-870f-0e0761aeac67" absoluteBounds="7.14, 8.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.0624995 : 7.625); (8.0624995 : 6.74644853320313); (9 : 6.74644853320313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/Project/Project_ProjectTeamAssignment" />
+      <nodes>
+        <classShapeMoniker Id="4fbcc393-152b-4c1f-8728-deb96b0e6999" />
+        <classShapeMoniker Id="d4da64f2-e49a-4b62-9efa-1375abfdc57d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.125 : 8.0624995); (10.0625005 : 8.0624995); (10.0625005 : 8.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/Project/Project_Task" />
+      <nodes>
+        <classShapeMoniker Id="4fbcc393-152b-4c1f-8728-deb96b0e6999" />
+        <classShapeMoniker Id="364d796c-f1be-4cb0-8c7e-5485d1822a40" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 6.4631982421875); (4.5 : 8.51044840494792); (7.125 : 8.51044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GroupProjectDataContext/TeamMember/TeamMember_Project" />
+      <nodes>
+        <classShapeMoniker Id="a1eb2345-5e25-49a5-a12b-fff4f033a714" />
+        <classShapeMoniker Id="4fbcc393-152b-4c1f-8728-deb96b0e6999" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
